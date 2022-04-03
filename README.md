@@ -41,7 +41,7 @@ Here I implemented Logistic Regression, Random Forest and Support Vector Machine
 * For Random Forest, as it is more resource-consuming than Logistic Regression, `RandomizedSearchCV` (5-fold),
 instead of Grid Search Cross-Validation, and `RFE` are used to find the optimal `n_features_`, `max_depth`, `min_samples_split`, `min_samples_leaf`.
 
-* For Support Vector Machine, `GridSearchCV` (5-fold) is used to find the optimal `C` and `gamma`. `RFE` isn't appied for SVM only for time-saving purposes.
+* For Support Vector Machine, `GridSearchCV` (5-fold) is used to find the optimal `C` and `gamma`. I didn't use `RFE` here only for time-saving purposes.
 
 ### Performance metrics of different models
 For this binary classification task, a few metrics are used to compare the performance of the models mentioned above: 
@@ -56,9 +56,9 @@ After comparing the performance metrics of each model, we can conclude that Logi
 `roc_auc_score` for the model is 0.674,
 `accuracy_score` for the model is 0.785.
 * Random Forest:
-`f1_score` for the model is 0.456,
-`roc_auc_score` for the model is 0.643,
-`accuracy_score` for the model is 0.783.
+`f1_score` for the model is 0.478,
+`roc_auc_score` for the model is 0.654,
+`accuracy_score` for the model is 0.794.
 * Support Vector Machine:
 `f1_score` for the model is 0.462,
 `roc_auc_score` for the model is 0.645,
