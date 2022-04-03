@@ -60,8 +60,8 @@ After comparing the performance metrics of each model, we can conclude that Logi
 `roc_auc_score` for the model is 0.654,
 `accuracy_score` for the model is 0.794.
 * Support Vector Machine:
-`f1_score` for the model is 0.462,
-`roc_auc_score` for the model is 0.645,
-`accuracy_score` for the model is 0.786.
+`f1_score` for the model is 0.457,
+`roc_auc_score` for the model is 0.643,
+`accuracy_score` for the model is 0.782.
 
-However, for real-life applications we would need more precise parameter tuning and careful evaluations to draw a more accurate conclusion.
+For real-life applications, we would need more precise parameter tuning and careful evaluations in order to draw a more accurate conclusion.
