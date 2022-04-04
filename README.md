@@ -13,10 +13,8 @@ Train and test data are downloaded with `kaggle competitions download -c auto-in
 As indicated by the instruction, the files `SHELL_AUTO` and `MEAN_AUTO` are ignored and only `train_auto` and `test_auto` are used.
 
 ### Data preprocessing
-Data from `train_auto` and `test_auto` are first combined into a single dataframe so that the feature variables (columns other than `TARGET_FLAG` and `TARGET_AMT`) can be preprocessed at the same time. 
-Once the preprocessing of feature variables is done, the combined dataframe will be divided into 2 dataframes for training/prediction based on the numbers of rows of these 2 original files.
-
-As we don't have information on `TARGET_AMT` in `test_auto`, this column has been dropped.
+Data from `train_auto` and `test_auto` are converted into dataframes for the preprocessing of the feature variables (columns other than `TARGET_FLAG` and `TARGET_AMT`). 
+As we don't have information on `TARGET_AMT` in `test_auto`, this column has been dropped in both dataframes.
 
 For the preprocessing of feature variables, after some exploration like checking NA values and numbers of unique values in each column, the following steps have been taken:
 * Use (0,1) label to encode categorical features that only have 2 categories
